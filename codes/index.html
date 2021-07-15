@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="hero">
         <div class="formbox">
+            <div class="heading">
+                <h1>BMI Calculator</h1>
+            </div>
+            <div class="optionbtn">
+                <div id="btn"></div>
+                <button type="button" class="togglebtn" onclick="kg()">Kilograms</button>
+                <button type="button" class="togglebtn" onclick="lbs()">Pounds</button>
+            </div>
+            <div id="kilograms" class="userInput">
+                <input type="number" class="inputField" placeholder="Height" required>
+                <input type="number" class="inputField" placeholder="Kg" required>
+            </div>
+            <div class="calculate">
+                <button type="button" class="caculatebtn" onclick="calculate()">Calculate</button>
+            </div>
             
         </div>
     </div>

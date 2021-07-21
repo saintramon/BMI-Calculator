@@ -15,18 +15,31 @@
             </div>
             <div class="optionbtn">
                 <div id="btn"></div>
-                <button type="button" class="togglebtn" onclick="kg()">Kilograms</button>
-                <button type="button" class="togglebtn" onclick="lbs()">Pounds</button>
+                <button type="button" class="togglebtn" onclick="kilograms()">Kilograms</button>
+                <button type="button" class="togglebtn" onclick="pounds()">Pounds</button>
             </div>
-            <div id="kilograms" class="userInput">
-                <input type="number" class="inputField" placeholder="Height" required>
-                <input type="number" class="inputField" placeholder="Kg" required>
-            </div>
+            <form id="kilograms" class="userInput">
+                <input type="number" class="inputField height" placeholder="Height" required>
+                <input type="number" class="inputField" placeholder="kg" required>
+            </form>
+            <form id="pounds" class="userInput">
+                <input type="number" class="inputField height" placeholder="Height" required>
+                <input type="number" class="inputField" placeholder="lbs" required>
+            </form>
             <div class="calculate">
                 <button type="button" class="caculatebtn" onclick="calculate()">Calculate</button>
+            </div>
+            <div class="results">
+                <div class="bmiNumber" id="bmiNum">
+                    <h1>0</h1>
+                </div>
+                <div class="bmiResult" id="bmiRes">
+                    <p>You're Overweight!</p>
+                </div>
             </div>
             
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

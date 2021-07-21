@@ -20,6 +20,7 @@
     transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 30px;
+    overflow: hidden;
 }
 .heading{
     position: relative;
@@ -91,4 +92,16 @@
     border-radius: 30px;
     border-color: transparent;
     cursor: pointer;
+}
+.results{
+    position: relative;
+    text-align: center;
+    top: 110px;
+}
+.bmiNumber{
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+#pounds{
+    left: 300px;
 }
